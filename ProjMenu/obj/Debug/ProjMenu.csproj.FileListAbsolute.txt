@@ -1,0 +1,13 @@
+C:\Users\biamo\source\repos\ProjMenu\ProjMenu\bin\Debug\ProjMenu.exe.config
+C:\Users\biamo\source\repos\ProjMenu\ProjMenu\bin\Debug\ProjMenu.exe
+C:\Users\biamo\source\repos\ProjMenu\ProjMenu\bin\Debug\ProjMenu.pdb
+C:\Users\biamo\source\repos\ProjMenu\ProjMenu\obj\Debug\ProjMenu.csproj.AssemblyReference.cache
+C:\Users\biamo\source\repos\ProjMenu\ProjMenu\obj\Debug\ProjMenu.Form1.resources
+C:\Users\biamo\source\repos\ProjMenu\ProjMenu\obj\Debug\ProjMenu.Properties.Resources.resources
+C:\Users\biamo\source\repos\ProjMenu\ProjMenu\obj\Debug\ProjMenu.csproj.GenerateResource.cache
+C:\Users\biamo\source\repos\ProjMenu\ProjMenu\obj\Debug\ProjMenu.csproj.CoreCompileInputs.cache
+C:\Users\biamo\source\repos\ProjMenu\ProjMenu\obj\Debug\ProjMenu.exe
+C:\Users\biamo\source\repos\ProjMenu\ProjMenu\obj\Debug\ProjMenu.pdb
+C:\Users\biamo\source\repos\ProjMenu\ProjMenu\obj\Debug\ProjMenu.frmAjuda.resources
+C:\Users\biamo\source\repos\ProjMenu\ProjMenu\obj\Debug\ProjMenu.FormsLoginHosp.resources
+C:\Users\biamo\source\repos\ProjMenu\ProjMenu\obj\Debug\ProjMenu.FormEntrar.resources
