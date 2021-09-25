@@ -45,5 +45,12 @@ namespace ProjMenu
                 }
             }
         }
+
+        private void btnCadastrar_Click(object sender, EventArgs e)
+        {
+            FormCad formCad = new FormCad();
+            formCad.Show();
+            this.Hide();
+        }
     }
 }

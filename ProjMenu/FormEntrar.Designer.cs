@@ -33,8 +33,8 @@ namespace ProjMenu
             this.lblLogin = new System.Windows.Forms.Label();
             this.lblSenha = new System.Windows.Forms.Label();
             this.btnEntrar = new System.Windows.Forms.Button();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.mtxLogin = new System.Windows.Forms.MaskedTextBox();
+            this.mtxSenha = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,30 +72,30 @@ namespace ProjMenu
             this.btnEntrar.TabIndex = 5;
             this.btnEntrar.Text = "Entrar";
             this.btnEntrar.UseVisualStyleBackColor = true;
+            this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
             // 
-            // maskedTextBox1
+            // mtxLogin
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(262, 79);
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.PasswordChar = '*';
-            this.maskedTextBox1.Size = new System.Drawing.Size(100, 20);
-            this.maskedTextBox1.TabIndex = 6;
+            this.mtxLogin.Location = new System.Drawing.Point(262, 79);
+            this.mtxLogin.Name = "mtxLogin";
+            this.mtxLogin.Size = new System.Drawing.Size(100, 20);
+            this.mtxLogin.TabIndex = 6;
             // 
-            // maskedTextBox2
+            // mtxSenha
             // 
-            this.maskedTextBox2.Location = new System.Drawing.Point(262, 116);
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.PasswordChar = '*';
-            this.maskedTextBox2.Size = new System.Drawing.Size(100, 20);
-            this.maskedTextBox2.TabIndex = 7;
+            this.mtxSenha.Location = new System.Drawing.Point(262, 116);
+            this.mtxSenha.Name = "mtxSenha";
+            this.mtxSenha.PasswordChar = '*';
+            this.mtxSenha.Size = new System.Drawing.Size(100, 20);
+            this.mtxSenha.TabIndex = 7;
             // 
             // FormEntrar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(457, 257);
-            this.Controls.Add(this.maskedTextBox2);
-            this.Controls.Add(this.maskedTextBox1);
+            this.Controls.Add(this.mtxSenha);
+            this.Controls.Add(this.mtxLogin);
             this.Controls.Add(this.btnEntrar);
             this.Controls.Add(this.lblSenha);
             this.Controls.Add(this.lblLogin);
@@ -116,7 +116,7 @@ namespace ProjMenu
         private System.Windows.Forms.Label lblLogin;
         private System.Windows.Forms.Label lblSenha;
         private System.Windows.Forms.Button btnEntrar;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
+        private System.Windows.Forms.MaskedTextBox mtxLogin;
+        private System.Windows.Forms.MaskedTextBox mtxSenha;
     }
 }

@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace ProjMenu
 {
-    public partial class FormCad : Form
+    public partial class FormBemVindo : Form
     {
-        public FormCad()
+        public FormBemVindo()
         {
             InitializeComponent();
         }
 
-        private void FormCad_FormClosed(object sender, FormClosedEventArgs e)
+        private void FormBemVindo_FormClosed(object sender, FormClosedEventArgs e)
         {
             if (Application.OpenForms.Count == 0)
             {

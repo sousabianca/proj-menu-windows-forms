@@ -54,6 +54,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormBemVindo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBemVindo.Designer.cs">
+      <DependentUpon>FormBemVindo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCad.Designer.cs">
+      <DependentUpon>FormCad.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormEntrar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +89,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBemVindo.resx">
+      <DependentUpon>FormBemVindo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCad.resx">
+      <DependentUpon>FormCad.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormEntrar.resx">
       <DependentUpon>FormEntrar.cs</DependentUpon>

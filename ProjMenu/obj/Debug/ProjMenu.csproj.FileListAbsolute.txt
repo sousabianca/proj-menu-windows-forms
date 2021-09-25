@@ -11,3 +11,5 @@ C:\Users\biamo\source\repos\ProjMenu\ProjMenu\obj\Debug\ProjMenu.pdb
 C:\Users\biamo\source\repos\ProjMenu\ProjMenu\obj\Debug\ProjMenu.frmAjuda.resources
 C:\Users\biamo\source\repos\ProjMenu\ProjMenu\obj\Debug\ProjMenu.FormsLoginHosp.resources
 C:\Users\biamo\source\repos\ProjMenu\ProjMenu\obj\Debug\ProjMenu.FormEntrar.resources
+C:\Users\biamo\source\repos\ProjMenu\ProjMenu\obj\Debug\ProjMenu.FormCad.resources
+C:\Users\biamo\source\repos\ProjMenu\ProjMenu\obj\Debug\ProjMenu.FormBemVindo.resources
