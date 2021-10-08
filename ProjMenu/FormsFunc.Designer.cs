@@ -1,7 +1,7 @@
 ﻿
 namespace ProjMenu
 {
-    partial class FormsLoginHosp
+    partial class FormsFunc
     {
         /// <summary>
         /// Required designer variable.
@@ -29,6 +29,7 @@ namespace ProjMenu
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormsFunc));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.lblNome = new System.Windows.Forms.Label();
@@ -37,21 +38,23 @@ namespace ProjMenu
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblSenha = new System.Windows.Forms.Label();
             this.lbl = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txbNome = new System.Windows.Forms.TextBox();
+            this.txbEmail = new System.Windows.Forms.TextBox();
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox4 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox5 = new System.Windows.Forms.MaskedTextBox();
+            this.txbCell = new System.Windows.Forms.MaskedTextBox();
+            this.txbCPF = new System.Windows.Forms.MaskedTextBox();
+            this.txbConfSenha = new System.Windows.Forms.MaskedTextBox();
+            this.txbSenha = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(38, 51);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(25, 65);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox1.Size = new System.Drawing.Size(137, 126);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -128,19 +131,19 @@ namespace ProjMenu
             this.lbl.TabIndex = 7;
             this.lbl.Text = "Confirme a senha";
             // 
-            // textBox1
+            // txbNome
             // 
-            this.textBox1.Location = new System.Drawing.Point(309, 51);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 8;
+            this.txbNome.Location = new System.Drawing.Point(309, 51);
+            this.txbNome.Name = "txbNome";
+            this.txbNome.Size = new System.Drawing.Size(100, 20);
+            this.txbNome.TabIndex = 8;
             // 
-            // textBox4
+            // txbEmail
             // 
-            this.textBox4.Location = new System.Drawing.Point(309, 150);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 11;
+            this.txbEmail.Location = new System.Drawing.Point(309, 150);
+            this.txbEmail.Name = "txbEmail";
+            this.txbEmail.Size = new System.Drawing.Size(100, 20);
+            this.txbEmail.TabIndex = 11;
             // 
             // maskedTextBox1
             // 
@@ -149,51 +152,51 @@ namespace ProjMenu
             this.maskedTextBox1.Size = new System.Drawing.Size(100, 20);
             this.maskedTextBox1.TabIndex = 14;
             // 
-            // maskedTextBox2
+            // txbCell
             // 
-            this.maskedTextBox2.Location = new System.Drawing.Point(309, 118);
-            this.maskedTextBox2.Mask = "(00) 00000-0000";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(100, 20);
-            this.maskedTextBox2.TabIndex = 15;
+            this.txbCell.Location = new System.Drawing.Point(309, 118);
+            this.txbCell.Mask = "(00) 00000-0000";
+            this.txbCell.Name = "txbCell";
+            this.txbCell.Size = new System.Drawing.Size(100, 20);
+            this.txbCell.TabIndex = 15;
             // 
-            // maskedTextBox3
+            // txbCPF
             // 
-            this.maskedTextBox3.Location = new System.Drawing.Point(309, 81);
-            this.maskedTextBox3.Mask = "000,000,000-00";
-            this.maskedTextBox3.Name = "maskedTextBox3";
-            this.maskedTextBox3.Size = new System.Drawing.Size(100, 20);
-            this.maskedTextBox3.TabIndex = 16;
+            this.txbCPF.Location = new System.Drawing.Point(309, 81);
+            this.txbCPF.Mask = "000,000,000-00";
+            this.txbCPF.Name = "txbCPF";
+            this.txbCPF.Size = new System.Drawing.Size(100, 20);
+            this.txbCPF.TabIndex = 16;
             // 
-            // maskedTextBox4
+            // txbConfSenha
             // 
-            this.maskedTextBox4.Location = new System.Drawing.Point(309, 208);
-            this.maskedTextBox4.Name = "maskedTextBox4";
-            this.maskedTextBox4.PasswordChar = '*';
-            this.maskedTextBox4.Size = new System.Drawing.Size(100, 20);
-            this.maskedTextBox4.TabIndex = 17;
+            this.txbConfSenha.Location = new System.Drawing.Point(309, 208);
+            this.txbConfSenha.Name = "txbConfSenha";
+            this.txbConfSenha.PasswordChar = '*';
+            this.txbConfSenha.Size = new System.Drawing.Size(100, 20);
+            this.txbConfSenha.TabIndex = 17;
             // 
-            // maskedTextBox5
+            // txbSenha
             // 
-            this.maskedTextBox5.Location = new System.Drawing.Point(309, 178);
-            this.maskedTextBox5.Name = "maskedTextBox5";
-            this.maskedTextBox5.PasswordChar = '*';
-            this.maskedTextBox5.Size = new System.Drawing.Size(100, 20);
-            this.maskedTextBox5.TabIndex = 18;
+            this.txbSenha.Location = new System.Drawing.Point(309, 178);
+            this.txbSenha.Name = "txbSenha";
+            this.txbSenha.PasswordChar = '*';
+            this.txbSenha.Size = new System.Drawing.Size(100, 20);
+            this.txbSenha.TabIndex = 18;
             // 
-            // FormsLoginHosp
+            // FormsFunc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.ClientSize = new System.Drawing.Size(483, 338);
-            this.Controls.Add(this.maskedTextBox5);
-            this.Controls.Add(this.maskedTextBox4);
-            this.Controls.Add(this.maskedTextBox3);
-            this.Controls.Add(this.maskedTextBox2);
+            this.Controls.Add(this.txbSenha);
+            this.Controls.Add(this.txbConfSenha);
+            this.Controls.Add(this.txbCPF);
+            this.Controls.Add(this.txbCell);
             this.Controls.Add(this.maskedTextBox1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txbEmail);
+            this.Controls.Add(this.txbNome);
             this.Controls.Add(this.lbl);
             this.Controls.Add(this.lblSenha);
             this.Controls.Add(this.lblEmail);
@@ -204,7 +207,7 @@ namespace ProjMenu
             this.Controls.Add(this.pictureBox1);
             this.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Name = "FormsLoginHosp";
+            this.Name = "FormsFunc";
             this.Text = "Cadastro";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormsLoginHosp_FormClosed);
             this.Load += new System.EventHandler(this.FormsLoginHosp_Load);
@@ -224,12 +227,12 @@ namespace ProjMenu
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label lblSenha;
         private System.Windows.Forms.Label lbl;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txbNome;
+        private System.Windows.Forms.TextBox txbEmail;
         private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox3;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox4;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox5;
+        private System.Windows.Forms.MaskedTextBox txbCell;
+        private System.Windows.Forms.MaskedTextBox txbCPF;
+        private System.Windows.Forms.MaskedTextBox txbConfSenha;
+        private System.Windows.Forms.MaskedTextBox txbSenha;
     }
 }

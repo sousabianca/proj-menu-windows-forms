@@ -45,9 +45,7 @@ namespace ProjMenu
         private void btnEntrar_Click(object sender, EventArgs e)
 
         {
-            FormBemVindo formBemVindo = new FormBemVindo();
-            formBemVindo.Show();
-            this.Hide();
+            
 
             Controle controle = new Controle();
             controle.acessar(mtxLogin.Text, mtxSenha.Text);
@@ -55,10 +53,12 @@ namespace ProjMenu
             if (controle.mensagem.Equals(""))
             {
 
-                if (controle.tem) //se para se for encontrado os logins exatamente igual 
+                if (controle.tem) //"se" para se for encontrado os logins exatamente igual 
                 {
                     MessageBox.Show("Logado com sucesso!", "Entrando", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                                   
+                    FormBemVindo formBemVindo = new FormBemVindo();
+                    formBemVindo.Show();
+                    this.Hide();
                 }
                 else
                 {

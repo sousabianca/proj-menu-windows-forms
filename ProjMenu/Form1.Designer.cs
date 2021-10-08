@@ -32,8 +32,6 @@ namespace ProjMenu
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.cadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.quartoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.funcionárioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.entrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -58,8 +56,6 @@ namespace ProjMenu
             // 
             this.cadastroToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.clienteToolStripMenuItem,
-            this.quartoToolStripMenuItem,
-            this.funcionárioToolStripMenuItem,
             this.toolStripSeparator1,
             this.sairToolStripMenuItem});
             this.cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
@@ -71,31 +67,19 @@ namespace ProjMenu
             this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
             this.clienteToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
             | System.Windows.Forms.Keys.A)));
-            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
-            this.clienteToolStripMenuItem.Text = "Hóspede";
+            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
+            this.clienteToolStripMenuItem.Text = "Funcionário";
             this.clienteToolStripMenuItem.Click += new System.EventHandler(this.clienteToolStripMenuItem_Click);
-            // 
-            // quartoToolStripMenuItem
-            // 
-            this.quartoToolStripMenuItem.Name = "quartoToolStripMenuItem";
-            this.quartoToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
-            this.quartoToolStripMenuItem.Text = "Quarto";
-            // 
-            // funcionárioToolStripMenuItem
-            // 
-            this.funcionárioToolStripMenuItem.Name = "funcionárioToolStripMenuItem";
-            this.funcionárioToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
-            this.funcionárioToolStripMenuItem.Text = "Funcionário";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(192, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(208, 6);
             // 
             // sairToolStripMenuItem
             // 
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
             this.sairToolStripMenuItem.Text = "Sair";
             this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
@@ -144,8 +128,6 @@ namespace ProjMenu
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem cadastroToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem clienteToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem quartoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem funcionárioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ajudaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exibirAjudaToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;

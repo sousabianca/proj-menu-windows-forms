@@ -37,7 +37,7 @@ namespace ProjMenu
 
         private void clienteToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormsLoginHosp formLogin = new FormsLoginHosp();
+            FormsFunc formLogin = new FormsFunc();
             formLogin.Show();
 
            this.Hide();

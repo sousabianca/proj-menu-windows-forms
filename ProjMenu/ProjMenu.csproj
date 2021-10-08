@@ -60,23 +60,17 @@
     <Compile Include="FormBemVindo.Designer.cs">
       <DependentUpon>FormBemVindo.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormCad.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormCad.Designer.cs">
-      <DependentUpon>FormCad.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormEntrar.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormEntrar.Designer.cs">
       <DependentUpon>FormEntrar.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormsLoginHosp.cs">
+    <Compile Include="FormsFunc.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormsLoginHosp.Designer.cs">
-      <DependentUpon>FormsLoginHosp.cs</DependentUpon>
+    <Compile Include="FormsFunc.Designer.cs">
+      <DependentUpon>FormsFunc.cs</DependentUpon>
     </Compile>
     <Compile Include="Form_SDI.cs">
       <SubType>Form</SubType>
@@ -93,14 +87,11 @@
     <EmbeddedResource Include="FormBemVindo.resx">
       <DependentUpon>FormBemVindo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormCad.resx">
-      <DependentUpon>FormCad.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormEntrar.resx">
       <DependentUpon>FormEntrar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormsLoginHosp.resx">
-      <DependentUpon>FormsLoginHosp.cs</DependentUpon>
+    <EmbeddedResource Include="FormsFunc.resx">
+      <DependentUpon>FormsFunc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_SDI.resx">
       <DependentUpon>Form_SDI.cs</DependentUpon>
@@ -113,6 +104,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -129,6 +121,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Apresentacao\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2021-10-05 at 6.40.05 PM %281%29.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

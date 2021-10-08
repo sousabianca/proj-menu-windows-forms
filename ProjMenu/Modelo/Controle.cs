@@ -22,8 +22,16 @@ namespace ProjMenu.Modelo
             return tem; //receber a chamada do método verificar
         }
 
-        public String cadastrar (String nome, int cpf, int cell, String email, String senha, String conSenha)
+        public String cadastrar (String nome, String cpf, String cell, String email, String senha, String confSenha)
         {
+            LoginDAOComandos loginDAO = new LoginDAOComandos();
+            this.mensagem = loginDAO.cadastrar(nome, cpf, cell, email, senha, confSenha);
+            
+            if (loginDAO.tem) //se for verdade mostrar uma mensagem de sucesso
+            {
+                this.tem = true;
+            }
+
             return mensagem;
         }
 

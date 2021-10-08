@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProjMenu.Modelo;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,9 +11,9 @@ using System.Windows.Forms;
 
 namespace ProjMenu
 {
-    public partial class FormsLoginHosp : Form
+    public partial class FormsFunc : Form
     {
-        public FormsLoginHosp()
+        public FormsFunc()
         {
             InitializeComponent();
         }
@@ -48,9 +49,21 @@ namespace ProjMenu
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
-            FormCad formCad = new FormCad();
-            formCad.Show();
-            this.Hide();
+            
+            Controle controle = new Controle();
+            String mensagem =  controle.cadastrar(txbNome.Text, txbCPF.Text, txbCell.Text, txbEmail.Text, txbSenha.Text, txbConfSenha.Text);
+            if (controle.tem)
+            {
+                FormCad formCad = new FormCad();
+                formCad.Show();
+                this.Hide();
+                MessageBox.Show(mensagem, "Cadastro", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show(controle.mensagem);
+            }
+            
         }
     }
 }
