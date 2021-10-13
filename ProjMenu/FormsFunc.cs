@@ -54,9 +54,7 @@ namespace ProjMenu
             String mensagem =  controle.cadastrar(txbNome.Text, txbCPF.Text, txbCell.Text, txbEmail.Text, txbSenha.Text, txbConfSenha.Text);
             if (controle.tem)
             {
-                FormCad formCad = new FormCad();
-                formCad.Show();
-                this.Hide();
+               
                 MessageBox.Show(mensagem, "Cadastro", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
