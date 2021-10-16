@@ -322,6 +322,7 @@ namespace ProjMenu
             this.Name = "FormBemVindo";
             this.Text = "Bem Vindo(a)";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormBemVindo_FormClosed);
+            this.Load += new System.EventHandler(this.FormBemVindo_Load);
             this.grbInsert.ResumeLayout(false);
             this.grbInsert.PerformLayout();
             this.grpAtualizar.ResumeLayout(false);

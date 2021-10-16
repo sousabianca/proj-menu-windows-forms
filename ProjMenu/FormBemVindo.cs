@@ -80,7 +80,7 @@ namespace ProjMenu
 
         private void btnRemover_Click(object sender, EventArgs e)
         {
-            string strconexao = "Data Source=.\\SQLEXPRESS;Initial Catalog=DBTeste;Integrated Security=True";
+            string strconexao = "Data Source=.\\SQLEXPRESS;Initial Catalog=BDLogin;Integrated Security=True";
             string query = "DELETE FROM quarto WHERE iduser = " + txbDelete.Text;
 
             SqlConnection conexao = new SqlConnection(strconexao);
@@ -89,6 +89,11 @@ namespace ProjMenu
             conexao.Open();
             comando.ExecuteNonQuery();
             conexao.Close();
+        }
+
+        private void FormBemVindo_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
