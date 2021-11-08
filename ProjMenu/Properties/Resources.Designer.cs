@@ -69,5 +69,15 @@ namespace ProjMenu.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2021_11_07_at_2_19_41_AM {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2021-11-07 at 2.19.41 AM", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

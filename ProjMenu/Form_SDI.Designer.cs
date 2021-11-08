@@ -35,19 +35,19 @@ namespace ProjMenu
             // lblSemAjuda
             // 
             this.lblSemAjuda.AutoSize = true;
-            this.lblSemAjuda.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSemAjuda.Location = new System.Drawing.Point(150, 104);
+            this.lblSemAjuda.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSemAjuda.Location = new System.Drawing.Point(74, 126);
             this.lblSemAjuda.Name = "lblSemAjuda";
-            this.lblSemAjuda.Size = new System.Drawing.Size(123, 25);
+            this.lblSemAjuda.Size = new System.Drawing.Size(481, 24);
             this.lblSemAjuda.TabIndex = 0;
-            this.lblSemAjuda.Text = "Sem ajuda";
+            this.lblSemAjuda.Text = "Entre em contato conosco via Whatsapp (12)99876-8778";
             this.lblSemAjuda.Click += new System.EventHandler(this.label1_Click);
             // 
             // frmAjuda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(408, 274);
+            this.ClientSize = new System.Drawing.Size(625, 323);
             this.Controls.Add(this.lblSemAjuda);
             this.Name = "frmAjuda";
             this.Text = "Ajuda";

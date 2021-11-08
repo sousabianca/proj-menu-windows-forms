@@ -66,6 +66,12 @@
     <Compile Include="FormEntrar.Designer.cs">
       <DependentUpon>FormEntrar.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormHospede.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHospede.Designer.cs">
+      <DependentUpon>FormHospede.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormsFunc.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,6 +130,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\WhatsApp Image 2021-10-05 at 6.40.05 PM %281%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2021-11-07 at 2.19.41 AM.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

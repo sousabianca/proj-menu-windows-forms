@@ -39,8 +39,8 @@ namespace ProjMenu
 
         private void btnAdicionar_Click(object sender, EventArgs e)
         {
-            string strconexao = "Data Source=\\SQLEXPRESS;Initial Catalog=BDLogin;Integrated Security=True";
-            string query = "INSERT INTO TB_User ([nome],[num],[descricao]) VALUES ('" + txbNome.Text + "','" + txbNum.Text + "','" + txbDesc.Text + "')";
+            string strconexao = "Data Source=MOONBI\\SQLEXPRESS;Initial Catalog=BDLogin;Integrated Security=True";
+            string query = "INSERT INTO quarto ([nome],[numero],[descricaoQuarto],[preco]) VALUES ('" + txbNome.Text + "','" + txbNum.Text + "','" + txbDesc.Text + "', '" + txbP.Text + "')";
 
             SqlConnection conexao = new SqlConnection(strconexao);
             SqlCommand comando = new SqlCommand(query, conexao);
@@ -52,8 +52,8 @@ namespace ProjMenu
 
         private void btnAtualizar_Click(object sender, EventArgs e)
         {
-            string strconexao = "Data Source=\\SQLEXPRESS;Initial Catalog=BDLogin;Integrated Security=True";
-            string query = "UPDATE TB_User SET nome = '" + txbNome.Text + "', numero ='" + txbNum.Text + "', descricaoQuarto = '" + txbDesc.Text + "' WHERE idQUarto = " + txbID.Text;
+            string strconexao = "Data Source=MOONBI\\SQLEXPRESS;Initial Catalog=BDLogin;Integrated Security=True";
+            string query = "UPDATE quarto SET nome = '" + txbNome.Text + "', numero ='" + txbNum.Text + "', descricaoQuarto = '" + txbDesc.Text + "', preco = '" + txbPreco.Text + "' WHERE idQUarto = " + txbID.Text;
 
             SqlConnection conexao = new SqlConnection(strconexao);
             SqlCommand comando = new SqlCommand(query, conexao);
@@ -65,8 +65,8 @@ namespace ProjMenu
 
         private void btnSelect_Click(object sender, EventArgs e)
         {
-            string strconexao = "\\SQLEXPRESS;Initial Catalog=BDLogin;Integrated Security=True";
-            string query = "SELECT [idQuarto],[nome],[numero],[descricaoQuarto] FROM TB_User";
+            string strconexao = "Data Source=MOONBI\\SQLEXPRESS;Initial Catalog=BDLogin;Integrated Security=True";
+            string query = "SELECT [idQuarto],[nome],[numero],[descricaoQuarto],[preco] FROM quarto";
 
             SqlConnection conexao = new SqlConnection(strconexao);
             SqlDataAdapter da = new SqlDataAdapter(query, conexao);
@@ -80,8 +80,8 @@ namespace ProjMenu
 
         private void btnRemover_Click(object sender, EventArgs e)
         {
-            string strconexao = "Data Source=.\\SQLEXPRESS;Initial Catalog=BDLogin;Integrated Security=True";
-            string query = "DELETE FROM quarto WHERE iduser = " + txbDelete.Text;
+            string strconexao = "Data Source=MOONBI\\SQLEXPRESS;Initial Catalog=BDLogin;Integrated Security=True";
+            string query = "DELETE FROM quarto WHERE idQuarto = " + txbDelete.Text;
 
             SqlConnection conexao = new SqlConnection(strconexao);
             SqlCommand comando = new SqlCommand(query, conexao);

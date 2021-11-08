@@ -55,6 +55,10 @@ namespace ProjMenu
             this.grbRemover = new System.Windows.Forms.GroupBox();
             this.dgvSelect = new System.Windows.Forms.DataGridView();
             this.btnSelect = new System.Windows.Forms.Button();
+            this.lblPreco = new System.Windows.Forms.Label();
+            this.txbPreco = new System.Windows.Forms.TextBox();
+            this.lblP = new System.Windows.Forms.Label();
+            this.txbP = new System.Windows.Forms.TextBox();
             this.grbInsert.SuspendLayout();
             this.grpAtualizar.SuspendLayout();
             this.grbID.SuspendLayout();
@@ -74,6 +78,8 @@ namespace ProjMenu
             // 
             // grbInsert
             // 
+            this.grbInsert.Controls.Add(this.txbP);
+            this.grbInsert.Controls.Add(this.lblP);
             this.grbInsert.Controls.Add(this.btnAdicionar);
             this.grbInsert.Controls.Add(this.txbDesc);
             this.grbInsert.Controls.Add(this.txbNum);
@@ -82,7 +88,7 @@ namespace ProjMenu
             this.grbInsert.Controls.Add(this.lblNum);
             this.grbInsert.Controls.Add(this.lblNome);
             this.grbInsert.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grbInsert.Location = new System.Drawing.Point(12, 87);
+            this.grbInsert.Location = new System.Drawing.Point(12, 64);
             this.grbInsert.Name = "grbInsert";
             this.grbInsert.Size = new System.Drawing.Size(300, 291);
             this.grbInsert.TabIndex = 1;
@@ -101,21 +107,21 @@ namespace ProjMenu
             // 
             // txbDesc
             // 
-            this.txbDesc.Location = new System.Drawing.Point(21, 209);
+            this.txbDesc.Location = new System.Drawing.Point(21, 163);
             this.txbDesc.Name = "txbDesc";
             this.txbDesc.Size = new System.Drawing.Size(181, 22);
             this.txbDesc.TabIndex = 5;
             // 
             // txbNum
             // 
-            this.txbNum.Location = new System.Drawing.Point(21, 137);
+            this.txbNum.Location = new System.Drawing.Point(21, 109);
             this.txbNum.Name = "txbNum";
             this.txbNum.Size = new System.Drawing.Size(76, 22);
             this.txbNum.TabIndex = 4;
             // 
             // txbNome
             // 
-            this.txbNome.Location = new System.Drawing.Point(21, 67);
+            this.txbNome.Location = new System.Drawing.Point(21, 55);
             this.txbNome.Name = "txbNome";
             this.txbNome.Size = new System.Drawing.Size(181, 22);
             this.txbNome.TabIndex = 3;
@@ -123,7 +129,7 @@ namespace ProjMenu
             // lblDesc
             // 
             this.lblDesc.AutoSize = true;
-            this.lblDesc.Location = new System.Drawing.Point(18, 174);
+            this.lblDesc.Location = new System.Drawing.Point(18, 144);
             this.lblDesc.Name = "lblDesc";
             this.lblDesc.Size = new System.Drawing.Size(70, 16);
             this.lblDesc.TabIndex = 2;
@@ -132,7 +138,7 @@ namespace ProjMenu
             // lblNum
             // 
             this.lblNum.AutoSize = true;
-            this.lblNum.Location = new System.Drawing.Point(18, 106);
+            this.lblNum.Location = new System.Drawing.Point(18, 90);
             this.lblNum.Name = "lblNum";
             this.lblNum.Size = new System.Drawing.Size(58, 16);
             this.lblNum.TabIndex = 1;
@@ -149,6 +155,8 @@ namespace ProjMenu
             // 
             // grpAtualizar
             // 
+            this.grpAtualizar.Controls.Add(this.txbPreco);
+            this.grpAtualizar.Controls.Add(this.lblPreco);
             this.grpAtualizar.Controls.Add(this.txbID);
             this.grpAtualizar.Controls.Add(this.label4);
             this.grpAtualizar.Controls.Add(this.btnAtualizar);
@@ -159,7 +167,7 @@ namespace ProjMenu
             this.grpAtualizar.Controls.Add(this.label2);
             this.grpAtualizar.Controls.Add(this.label3);
             this.grpAtualizar.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpAtualizar.Location = new System.Drawing.Point(12, 412);
+            this.grpAtualizar.Location = new System.Drawing.Point(12, 361);
             this.grpAtualizar.Name = "grpAtualizar";
             this.grpAtualizar.Size = new System.Drawing.Size(300, 336);
             this.grpAtualizar.TabIndex = 2;
@@ -168,7 +176,7 @@ namespace ProjMenu
             // 
             // txbID
             // 
-            this.txbID.Location = new System.Drawing.Point(21, 274);
+            this.txbID.Location = new System.Drawing.Point(21, 243);
             this.txbID.Name = "txbID";
             this.txbID.Size = new System.Drawing.Size(67, 22);
             this.txbID.TabIndex = 8;
@@ -176,7 +184,7 @@ namespace ProjMenu
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(18, 250);
+            this.label4.Location = new System.Drawing.Point(18, 224);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(86, 16);
             this.label4.TabIndex = 7;
@@ -184,24 +192,24 @@ namespace ProjMenu
             // 
             // btnAtualizar
             // 
-            this.btnAtualizar.Location = new System.Drawing.Point(89, 302);
+            this.btnAtualizar.Location = new System.Drawing.Point(89, 281);
             this.btnAtualizar.Name = "btnAtualizar";
             this.btnAtualizar.Size = new System.Drawing.Size(88, 23);
             this.btnAtualizar.TabIndex = 6;
-            this.btnAtualizar.Text = "Adicionar";
+            this.btnAtualizar.Text = "Atualizar";
             this.btnAtualizar.UseVisualStyleBackColor = true;
             this.btnAtualizar.Click += new System.EventHandler(this.btnAtualizar_Click);
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(21, 209);
+            this.textBox1.Location = new System.Drawing.Point(21, 155);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(181, 22);
             this.textBox1.TabIndex = 5;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(21, 137);
+            this.textBox2.Location = new System.Drawing.Point(21, 111);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(76, 22);
             this.textBox2.TabIndex = 4;
@@ -216,7 +224,7 @@ namespace ProjMenu
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(18, 174);
+            this.label1.Location = new System.Drawing.Point(18, 136);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(70, 16);
             this.label1.TabIndex = 2;
@@ -225,7 +233,7 @@ namespace ProjMenu
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(18, 106);
+            this.label2.Location = new System.Drawing.Point(18, 92);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 16);
             this.label2.TabIndex = 1;
@@ -234,7 +242,7 @@ namespace ProjMenu
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(18, 36);
+            this.label3.Location = new System.Drawing.Point(18, 48);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(45, 16);
             this.label3.TabIndex = 0;
@@ -246,7 +254,7 @@ namespace ProjMenu
             this.grbID.Controls.Add(this.txbDelete);
             this.grbID.Controls.Add(this.lblID);
             this.grbID.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grbID.Location = new System.Drawing.Point(456, 87);
+            this.grbID.Location = new System.Drawing.Point(456, 64);
             this.grbID.Name = "grbID";
             this.grbID.Size = new System.Drawing.Size(300, 176);
             this.grbID.TabIndex = 3;
@@ -309,6 +317,38 @@ namespace ProjMenu
             this.btnSelect.UseVisualStyleBackColor = true;
             this.btnSelect.Click += new System.EventHandler(this.btnSelect_Click);
             // 
+            // lblPreco
+            // 
+            this.lblPreco.AutoSize = true;
+            this.lblPreco.Location = new System.Drawing.Point(18, 180);
+            this.lblPreco.Name = "lblPreco";
+            this.lblPreco.Size = new System.Drawing.Size(45, 16);
+            this.lblPreco.TabIndex = 9;
+            this.lblPreco.Text = "Preço";
+            // 
+            // txbPreco
+            // 
+            this.txbPreco.Location = new System.Drawing.Point(21, 199);
+            this.txbPreco.Name = "txbPreco";
+            this.txbPreco.Size = new System.Drawing.Size(181, 22);
+            this.txbPreco.TabIndex = 10;
+            // 
+            // lblP
+            // 
+            this.lblP.AutoSize = true;
+            this.lblP.Location = new System.Drawing.Point(18, 197);
+            this.lblP.Name = "lblP";
+            this.lblP.Size = new System.Drawing.Size(45, 16);
+            this.lblP.TabIndex = 7;
+            this.lblP.Text = "Preço";
+            // 
+            // txbP
+            // 
+            this.txbP.Location = new System.Drawing.Point(21, 219);
+            this.txbP.Name = "txbP";
+            this.txbP.Size = new System.Drawing.Size(181, 22);
+            this.txbP.TabIndex = 8;
+            // 
             // FormBemVindo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -364,5 +404,9 @@ namespace ProjMenu
         private System.Windows.Forms.GroupBox grbRemover;
         private System.Windows.Forms.DataGridView dgvSelect;
         private System.Windows.Forms.Button btnSelect;
+        private System.Windows.Forms.TextBox txbPreco;
+        private System.Windows.Forms.Label lblPreco;
+        private System.Windows.Forms.TextBox txbP;
+        private System.Windows.Forms.Label lblP;
     }
 }

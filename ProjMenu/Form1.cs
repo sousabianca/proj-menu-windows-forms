@@ -40,7 +40,7 @@ namespace ProjMenu
             FormsFunc formLogin = new FormsFunc();
             formLogin.Show();
 
-           this.Hide();
+            this.Hide();
         }
 
         private void entrarToolStripMenuItem_Click(object sender, EventArgs e)
@@ -50,6 +50,32 @@ namespace ProjMenu
             formEntrar.Show();
 
            this.Hide();
+        }
+
+        private void hóspedeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void cadastrarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            FormsFunc formLogin = new FormsFunc();
+            formLogin.Show();
+
+            this.Hide();
+        }
+
+        private void entrarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FormEntrar formEntrar = new FormEntrar();
+            formEntrar.Show();
+
+            this.Hide();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
